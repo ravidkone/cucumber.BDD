@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 
 public class stepDefinition {
 	
+	// this is added to GIT
 	// [-- 1) \"(.*)\"  OR 2) \"([^\"]*\"   --] to pass the arguments use Reg expression
 	@Given("^user open browser and login to web using \"(.*)\" and \"(.*)\"$")
 	public void user_open_browser_and_login_to_web_using_and(String username, String pwd) {
