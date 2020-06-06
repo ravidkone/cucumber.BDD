@@ -1,0 +1,246 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-06T15:52:35.282Z",
+        "line": 5,
+        "name": "open browser and login",
+        "description": "",
+        "id": "login-to-website;open-browser-and-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user open browser and login to web using \"ravik\" and \"kone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ravik",
+                  "offset": 42
+                },
+                {
+                  "val": "kone",
+                  "offset": 54
+                }
+              ],
+              "location": "cucumber.BDD.stepDefinition.user_open_browser_and_login_to_web_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on task tab",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.user_click_on_task_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "task tab will open",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.task_tab_will_open()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter task details",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.user_enter_task_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "task is created",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.task_is_created()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testnew"
+          },
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-06T15:52:35.631Z",
+        "line": 22,
+        "name": "open browser and fill form",
+        "description": "",
+        "id": "login-to-website;open-browser-and-fill-form;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user open form and enter \"ravi\" and \"kone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ravi",
+                  "offset": 26
+                },
+                {
+                  "val": "kone",
+                  "offset": 37
+                }
+              ],
+              "location": "cucumber.BDD.stepDefinition.user_open_form_and_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user click on submit button",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.user_click_on_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "form will get submitted",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.form_will_get_submitted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testnew"
+          },
+          {
+            "name": "@Fillform"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-06T15:52:35.659Z",
+        "line": 23,
+        "name": "open browser and fill form",
+        "description": "",
+        "id": "login-to-website;open-browser-and-fill-form;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user open form and enter \"kiran\" and \"kkk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kiran",
+                  "offset": 26
+                },
+                {
+                  "val": "kkk",
+                  "offset": 38
+                }
+              ],
+              "location": "cucumber.BDD.stepDefinition.user_open_form_and_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user click on submit button",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.user_click_on_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "form will get submitted",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.form_will_get_submitted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testnew"
+          },
+          {
+            "name": "@Fillform"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "login to website",
+    "description": "",
+    "id": "login-to-website",
+    "keyword": "Feature",
+    "uri": "file:FeatureFile/first.feature",
+    "tags": [
+      {
+        "name": "@testnew",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
