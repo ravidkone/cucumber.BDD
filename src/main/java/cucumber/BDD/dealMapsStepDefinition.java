@@ -32,7 +32,6 @@ public class dealMapsStepDefinition {
 	@Then("user fills deals cost details")
 	public void user_fills_deals_cost_details(DataTable details) {
 		for (Map<Object, Object> userdetails : details.asMaps(String.class, String.class)) {
-
 	//	Map<String,String> userdetails=(Map<String, String>) details.asMaps(String.class, String.class);
 		System.out.println("entered data is: Amount:"+userdetails.get("deal name"));
 		System.out.println("entered data is: Amount:"+userdetails.get("amount"));
