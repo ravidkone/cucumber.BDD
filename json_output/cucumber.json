@@ -3,8 +3,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-07T11:08:07.193Z",
-        "line": 4,
+        "start_timestamp": "2020-06-07T13:50:34.061Z",
+        "line": 5,
         "name": "create a contact list",
         "description": "",
         "id": "create-contact-list;create-a-contact-list",
@@ -13,25 +13,20 @@
         "steps": [
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 6,
+            "line": 7,
             "name": "user already logged into web",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_already_logged_into_web()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 15000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
+            "line": 8,
             "name": "user enter contact details as FirstName and LastName",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_enter_contact_details_as_FirstName_and_LastName(io.cucumber.datatable.DataTable)"
-            },
+            "match": {},
             "rows": [
               {
                 "cells": [
@@ -44,25 +39,20 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 9,
+            "line": 10,
             "name": "user click on contact submit tab",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_click_on_contact_submit_tab()"
-            },
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 16000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 10,
+            "line": 11,
             "name": "user fill cost details",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_fill_cost_details(io.cucumber.datatable.DataTable)"
-            },
+            "match": {},
             "rows": [
               {
                 "cells": [
@@ -77,33 +67,26 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 12,
+            "line": 13,
             "name": "form contact list will be added",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.form_contact_list_will_be_added()"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 13,
+            "line": 14,
             "name": "user contact is added",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_contact_is_added()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
-          },
-          {
-            "name": "@test"
+            "name": "@DataTable"
           }
         ]
       }
