@@ -3,8 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-07T13:50:34.061Z",
-        "start_timestamp": "2020-06-07T13:44:58.833Z",
+        "start_timestamp": "2020-06-07T13:58:03.223Z",
         "line": 5,
         "name": "create a contact list",
         "description": "",
@@ -14,12 +13,14 @@
         "steps": [
           {
             "result": {
-              "duration": 7000000,
+              "duration": 12000000,
               "status": "passed"
             },
             "line": 7,
             "name": "user already logged into web",
-            "match": {},
+            "match": {
+              "location": "cucumber.BDD.contactStepDefinition.user_already_logged_into_web()"
+            },
             "keyword": "Given "
           },
           {
@@ -29,7 +30,9 @@
             },
             "line": 8,
             "name": "user enter contact details as FirstName and LastName",
-            "match": {},
+            "match": {
+              "location": "cucumber.BDD.contactStepDefinition.user_enter_contact_details_as_FirstName_and_LastName(io.cucumber.datatable.DataTable)"
+            },
             "rows": [
               {
                 "cells": [
@@ -47,7 +50,9 @@
             },
             "line": 10,
             "name": "user click on contact submit tab",
-            "match": {},
+            "match": {
+              "location": "cucumber.BDD.contactStepDefinition.user_click_on_contact_submit_tab()"
+            },
             "keyword": "When "
           },
           {
@@ -57,7 +62,9 @@
             },
             "line": 11,
             "name": "user fill cost details",
-            "match": {},
+            "match": {
+              "location": "cucumber.BDD.contactStepDefinition.user_fill_cost_details(io.cucumber.datatable.DataTable)"
+            },
             "rows": [
               {
                 "cells": [
@@ -72,24 +79,26 @@
           },
           {
             "result": {
-
-              "duration": 3000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 13,
             "name": "form contact list will be added",
-            "match": {},
+            "match": {
+              "location": "cucumber.BDD.contactStepDefinition.form_contact_list_will_be_added()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 14,
             "name": "user contact is added",
-            "match": {},
+            "match": {
+              "location": "cucumber.BDD.contactStepDefinition.user_contact_is_added()"
+            },
             "keyword": "Then "
           }
         ],
