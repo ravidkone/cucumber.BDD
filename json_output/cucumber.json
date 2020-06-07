@@ -4,6 +4,7 @@
     "elements": [
       {
         "start_timestamp": "2020-06-07T13:50:34.061Z",
+        "start_timestamp": "2020-06-07T13:44:58.833Z",
         "line": 5,
         "name": "create a contact list",
         "description": "",
@@ -13,7 +14,8 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 7000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "user already logged into web",
@@ -22,7 +24,8 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "passed"
             },
             "line": 8,
             "name": "user enter contact details as FirstName and LastName",
@@ -39,7 +42,8 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "user click on contact submit tab",
@@ -48,7 +52,8 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3000000,
+              "status": "passed"
             },
             "line": 11,
             "name": "user fill cost details",
@@ -67,7 +72,9 @@
           },
           {
             "result": {
-              "status": "undefined"
+
+              "duration": 3000000,
+              "status": "passed"
             },
             "line": 13,
             "name": "form contact list will be added",
@@ -76,7 +83,9 @@
           },
           {
             "result": {
-              "status": "undefined"
+
+              "duration": 3000000,
+              "status": "passed"
             },
             "line": 14,
             "name": "user contact is added",
