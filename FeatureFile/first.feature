@@ -19,5 +19,7 @@ Then form will get submitted
 
 Examples:
 	|FirstName	|LastName	|
-	|ravi				|kone			|
-	|kiran			|kkk			|
+	|ravi		|kone		|
+	|kiran		|kkk		|
+
+

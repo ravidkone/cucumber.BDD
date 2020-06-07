@@ -38,7 +38,7 @@ public class stepDefinition {
 	}
 	
 	// second scenario
-	@Given("^user open form and enter \\\"(.*)\\\" and \\\"(.*)\\\"$")
+	@Given("^user open form and enter \"(.*)\" and \"(.*)\"$")
 	public void user_open_form_and_enter_and(String firstName, String lastName) {
 		System.out.println("First Name: "+firstName+" and Last Name: "+lastName+" Entered");
 	}
