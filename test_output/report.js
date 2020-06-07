@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:FeatureFile/contact.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:FeatureFile/dealMaps.feature");
 formatter.feature({
-  "name": "create contact list",
+  "name": "create deals list",
   "description": "",
   "keyword": "Feature"
 });
@@ -10,72 +10,76 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@DataTable"
+      "name": "@Maps"
     }
   ]
 });
 formatter.step({
-  "name": "user already logged into web",
+  "name": "user already logged into deals web",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_already_logged_into_web()"
+  "location": "cucumber.BDD.dealMapsStepDefinition.user_already_logged_into_deals_web()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter contact details as FirstName and LastName",
+  "name": "user enter deals details",
   "rows": [
+    {},
     {}
   ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_enter_contact_details_as_FirstName_and_LastName(io.cucumber.datatable.DataTable)"
+  "location": "cucumber.BDD.dealMapsStepDefinition.user_enter_deals_details(io.cucumber.datatable.DataTable)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click on contact submit tab",
+  "name": "user click on deals submit tab",
   "keyword": "When "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_click_on_contact_submit_tab()"
+  "location": "cucumber.BDD.dealMapsStepDefinition.user_click_on_deals_submit_tab()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user fill cost details",
+  "name": "user fills deals cost details",
   "rows": [
+    {},
+    {},
+    {},
     {}
   ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_fill_cost_details(io.cucumber.datatable.DataTable)"
+  "location": "cucumber.BDD.dealMapsStepDefinition.user_fills_deals_cost_details(io.cucumber.datatable.DataTable)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "form contact list will be added",
+  "name": "deals list will be added",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.form_contact_list_will_be_added()"
+  "location": "cucumber.BDD.dealMapsStepDefinition.deals_list_will_be_added()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user contact is added",
+  "name": "user deal is added",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_contact_is_added()"
+  "location": "cucumber.BDD.dealMapsStepDefinition.user_deal_is_added()"
 });
 formatter.result({
   "status": "passed"

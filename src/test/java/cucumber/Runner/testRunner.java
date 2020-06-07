@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="FeatureFile//contact.feature", //the path of the feature file
+		features="FeatureFile//dealMaps.feature", //the path of the feature file
 		glue= {"cucumber.BDD"}, //path/package name of the setpDefinition file 
 		dryRun = false, // to check if mapping is proper between feature and setpDefinition file
 		monochrome = true, // to display the output pretty/proper readable format

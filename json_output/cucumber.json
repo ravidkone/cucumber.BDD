@@ -3,37 +3,43 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-07T13:58:03.223Z",
+        "start_timestamp": "2020-06-07T14:28:18.733Z",
         "line": 5,
         "name": "create a contact list",
         "description": "",
-        "id": "create-contact-list;create-a-contact-list",
+        "id": "create-deals-list;create-a-contact-list",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user already logged into web",
+            "name": "user already logged into deals web",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_already_logged_into_web()"
+              "location": "cucumber.BDD.dealMapsStepDefinition.user_already_logged_into_deals_web()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8000000,
+              "duration": 12000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enter contact details as FirstName and LastName",
+            "name": "user enter deals details",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_enter_contact_details_as_FirstName_and_LastName(io.cucumber.datatable.DataTable)"
+              "location": "cucumber.BDD.dealMapsStepDefinition.user_enter_deals_details(io.cucumber.datatable.DataTable)"
             },
             "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "LastName"
+                ]
+              },
               {
                 "cells": [
                   "ravikk",
@@ -45,27 +51,35 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 4000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user click on contact submit tab",
+            "line": 11,
+            "name": "user click on deals submit tab",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_click_on_contact_submit_tab()"
+              "location": "cucumber.BDD.dealMapsStepDefinition.user_click_on_deals_submit_tab()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 6000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user fill cost details",
+            "line": 12,
+            "name": "user fills deals cost details",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_fill_cost_details(io.cucumber.datatable.DataTable)"
+              "location": "cucumber.BDD.dealMapsStepDefinition.user_fills_deals_cost_details(io.cucumber.datatable.DataTable)"
             },
             "rows": [
+              {
+                "cells": [
+                  "deal name",
+                  "amount",
+                  "tax",
+                  "rate"
+                ]
+              },
               {
                 "cells": [
                   "test deal",
@@ -73,20 +87,24 @@
                   "20",
                   "30"
                 ]
+              },
+              {
+                "cells": [
+                  "test deal1",
+                  "2000",
+                  "30",
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "test deal2",
+                  "3000",
+                  "40",
+                  "70"
+                ]
               }
             ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "form contact list will be added",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.form_contact_list_will_be_added()"
-            },
             "keyword": "Then "
           },
           {
@@ -94,26 +112,38 @@
               "duration": 2000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user contact is added",
+            "line": 18,
+            "name": "deals list will be added",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_contact_is_added()"
+              "location": "cucumber.BDD.dealMapsStepDefinition.deals_list_will_be_added()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user deal is added",
+            "match": {
+              "location": "cucumber.BDD.dealMapsStepDefinition.user_deal_is_added()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@DataTable"
+            "name": "@Maps"
           }
         ]
       }
     ],
-    "name": "create contact list",
+    "name": "create deals list",
     "description": "",
-    "id": "create-contact-list",
+    "id": "create-deals-list",
     "keyword": "Feature",
-    "uri": "file:FeatureFile/contact.feature",
+    "uri": "file:FeatureFile/dealMaps.feature",
     "tags": []
   }
 ]
