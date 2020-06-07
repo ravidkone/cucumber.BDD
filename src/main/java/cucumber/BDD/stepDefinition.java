@@ -1,11 +1,15 @@
 package cucumber.BDD;
 
+import com.qa.pages.LoginPage;
+import com.qa.pages.homePage;
+import com.qa.utility.TestBase;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class stepDefinition {
+public class stepDefinition extends TestBase{
 	
 
 	//making changes in ravibdd branch
@@ -14,12 +18,16 @@ public class stepDefinition {
 	// [-- 1) \"(.*)\"  OR 2) \"([^\"]*\"   --] to pass the arguments use Reg expression
 	@Given("^user open browser and login to web using \"(.*)\" and \"(.*)\"$")
 	public void user_open_browser_and_login_to_web_using_and(String username, String pwd) {
+		TestBase.initializer();
+		LoginPage.loginpageverify();
+		LoginPage.login();
 		System.out.println("UserName:"+username+" and Password:"+pwd+" ,browser opned");
 	}
 
 	@When("^user click on task tab$")
 	public void user_click_on_task_tab() {
-		System.out.println("clicked on task tab");
+		homePage.homepageverify();
+		//System.out.println("clicked on task tab");
 	}
 
 	@Then("^task tab will open$")
@@ -35,6 +43,7 @@ public class stepDefinition {
 	@And("task is created")
 	public void task_is_created() {
 		System.out.println("task created successfully");
+		TestBase.closebrowser();
 	}
 	
 	// second scenario
