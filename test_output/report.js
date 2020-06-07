@@ -10,10 +10,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Login"
-    },
-    {
-      "name": "@test"
+      "name": "@DataTable"
     }
   ]
 });
