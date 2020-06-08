@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-07T16:13:48.238Z",
+        "start_timestamp": "2020-06-08T14:03:12.139Z",
         "before": [
           {
             "result": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 29655000000,
+              "duration": 45989000000,
               "status": "passed"
             },
             "line": 7,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 8000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 8,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 3817000000,
+              "duration": 1832000000,
               "status": "passed"
             },
             "line": 11,

@@ -27,7 +27,7 @@ public class TestBase {
 		}
 	}
 	
-	public static void initializer() {
+	public static void initializer() throws InterruptedException {
 		String browserName=prop.getProperty("browser");
 		WebDriverManager.chromedriver().setup();
 		if(browserName.equals("chrome")) {
@@ -40,6 +40,7 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		Thread.sleep(3000);
 	}
 	public static void closebrowser() {
 		driver.close();
