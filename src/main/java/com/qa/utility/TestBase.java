@@ -20,7 +20,7 @@ public class TestBase {
 		prop = new Properties();
 		FileInputStream fis;
 		try {
-			fis = new FileInputStream("E:\\Cowrks Project\\cucumber_BDD\\src\\main\\java\\com\\qa\\config\\config.properties");
+			fis = new FileInputStream("../cucumber_BDD/src/main/java/com/qa/config/config.properties");
 			prop.load(fis);
 		} catch (Exception e) {
 			e.printStackTrace();
