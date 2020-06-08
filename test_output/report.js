@@ -1,83 +1,84 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:FeatureFile/contact.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:FeatureFile/first.feature");
 formatter.feature({
-  "name": "create contact list",
+  "name": "login to website",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@testnew"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "create a contact list",
+  "name": "open browser and login",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@DataTable"
+      "name": "@testnew"
+    },
+    {
+      "name": "@Login"
+    },
+    {
+      "name": "@test"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "user already logged into web",
+  "name": "user open browser and login to web using \"ravik\" and \"kone\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_already_logged_into_web()"
+  "location": "cucumber.BDD.stepDefinition.user_open_browser_and_login_to_web_using_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter contact details as FirstName and LastName",
-  "rows": [
-    {}
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_enter_contact_details_as_FirstName_and_LastName(io.cucumber.datatable.DataTable)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on contact submit tab",
+  "name": "user click on task tab",
   "keyword": "When "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_click_on_contact_submit_tab()"
+  "location": "cucumber.BDD.stepDefinition.user_click_on_task_tab()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user fill cost details",
-  "rows": [
-    {}
-  ],
+  "name": "task tab will open",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_fill_cost_details(io.cucumber.datatable.DataTable)"
+  "location": "cucumber.BDD.stepDefinition.task_tab_will_open()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "form contact list will be added",
+  "name": "user enter task details",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.form_contact_list_will_be_added()"
+  "location": "cucumber.BDD.stepDefinition.user_enter_task_details()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user contact is added",
-  "keyword": "Then "
+  "name": "task is created",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "cucumber.BDD.contactStepDefinition.user_contact_is_added()"
+  "location": "cucumber.BDD.stepDefinition.task_is_created()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

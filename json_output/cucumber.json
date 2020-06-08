@@ -1,119 +1,135 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-07T13:44:58.833Z",
+        "start_timestamp": "2020-06-08T14:03:12.139Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.BDD.hookStepDefinition.setup()"
+            }
+          }
+        ],
         "line": 5,
-        "name": "create a contact list",
+        "name": "open browser and login",
         "description": "",
-        "id": "create-contact-list;create-a-contact-list",
+        "id": "login-to-website;open-browser-and-login",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.BDD.hookStepDefinition.teardown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7000000,
+              "duration": 45989000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user already logged into web",
+            "name": "user open browser and login to web using \"ravik\" and \"kone\"",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_already_logged_into_web()"
+              "arguments": [
+                {
+                  "val": "ravik",
+                  "offset": 42
+                },
+                {
+                  "val": "kone",
+                  "offset": 54
+                }
+              ],
+              "location": "cucumber.BDD.stepDefinition.user_open_browser_and_login_to_web_using_and(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enter contact details as FirstName and LastName",
+            "name": "user click on task tab",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_enter_contact_details_as_FirstName_and_LastName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "ravikk",
-                  "konekk"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user click on contact submit tab",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_click_on_contact_submit_tab()"
+              "location": "cucumber.BDD.stepDefinition.user_click_on_task_tab()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "task tab will open",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.task_tab_will_open()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter task details",
+            "match": {
+              "location": "cucumber.BDD.stepDefinition.user_enter_task_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1832000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "user fill cost details",
+            "name": "task is created",
             "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_fill_cost_details(io.cucumber.datatable.DataTable)"
+              "location": "cucumber.BDD.stepDefinition.task_is_created()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "test deal",
-                  "1000",
-                  "20",
-                  "30"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "form contact list will be added",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.form_contact_list_will_be_added()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user contact is added",
-            "match": {
-              "location": "cucumber.BDD.contactStepDefinition.user_contact_is_added()"
-            },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@DataTable"
+            "name": "@testnew"
+          },
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@test"
           }
         ]
       }
     ],
-    "name": "create contact list",
+    "name": "login to website",
     "description": "",
-    "id": "create-contact-list",
+    "id": "login-to-website",
     "keyword": "Feature",
-    "uri": "file:FeatureFile/contact.feature",
-    "tags": []
+    "uri": "file:FeatureFile/first.feature",
+    "tags": [
+      {
+        "name": "@testnew",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
