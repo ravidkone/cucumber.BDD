@@ -1,0 +1,4 @@
+2020-06-18 00:26:41 INFO  RunLog4jLogs:16 - This is info message
+2020-06-18 00:26:41 WARN  RunLog4jLogs:17 - This is warn message
+2020-06-18 00:26:41 FATAL RunLog4jLogs:18 - This is fatal message
+2020-06-18 00:26:41 ERROR RunLog4jLogs:19 - This is error message
